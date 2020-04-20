@@ -1,0 +1,14 @@
+<section>
+    <h1>{{title}}</h1>
+    <h2>List of celebrities</h2>
+    <div>
+        {{#each celebrities}}
+        <article>
+            <h3>{{this.name}}</h3>
+            <a href="/celebrities/{{this._id}}">Show a specific celebrity</a>
+            <a href="/celebrities/{{this._id}}/edit">Edit this celebrity</a>
+            <a href="/celebrities/{{this._id}}/delete">Delete this celebrity</a>
+        </article>
+        {{/each}}
+    </div>
+</section>
